@@ -1,0 +1,465 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+a{
+    color: #6495de;
+}
+#main{
+    margin: 30px auto;
+}
+.side-width{
+    width: 980px;
+    margin: 0 auto;
+}
+/* エラーメッセージ */
+.area-msg{
+    padding-bottom: 15px;
+    color: #FF0102;
+}
+label.err input, label.err select{
+    background: #F7DCD9;
+}
+/* ヘッダー */
+#header{
+    height: 80px;
+    background: rgb(9, 3, 92);
+}
+#header .site-width{
+    overflow: hidden;
+}
+#header h1{
+    display: inline-block;
+    line-height: 80px;
+    font-size: 30px;
+    font-family: 'Dela Gothic One', cursive;
+}
+#header a{
+    color: #fff;
+    text-decoration: none;
+}
+#header nav{
+    float: right;
+    height: 80px;
+}
+#header nav ul{
+    overflow: hidden;
+    height: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#header nav li{
+    list-style: none;
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 15px;
+    box-sizing: border-box;
+}
+#header nav li a{
+    display: block;
+    padding: 0 20px 0 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+#header nav li a:hover{
+    background: rgb(67, 56, 116);
+}
+
+/* メイン */
+#section{
+    min-height: 600px;
+    margin: 0 auto;
+}
+#section .form-container{
+    width: 40%;
+    padding: 50px;
+    margin: 80px auto;
+    border: 4px solid #e6f0f0;
+}
+#section .form-container form{
+    overflow: hidden;
+}
+#section .form-container form h2{
+    margin-bottom: 30px;
+    color: #444;
+}
+input[type="text"]{
+    display: block;
+    height: 60px;
+    width: 100%;
+    background: #F6F5F5;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+input[type="password"]{
+    display: block;
+    height: 60px;
+    width: 100%;
+    background: #F6F5F5;
+    border: none; 
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+.form-container form .btn-container{
+    overflow: hidden;
+}
+.form-container form input[type="submit"]{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 40px;
+    border: none;
+    background: #6495de;
+    color: #fff;
+    font-size: 16px;
+}
+.form-container form input[type="submit"]:hover{
+    cursor: pointer;
+}
+.form-container form .btn{
+    max-width: 150px;
+    float: right;
+}
+.form-container form .btn-mid{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+#section .form-container h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+#section .form-container label{
+    display: block;
+}
+.main-wrap{
+    overflow: hidden;
+}
+.main-wrap img{
+    height: 500px;
+    width: 500px;
+    float: left;
+    display: block;
+}
+.main-wrap .left-wrap{
+    float: left;
+}
+.main-wrap .left-wrap a{
+    margin: 40px auto;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+}
+.main-wrap .left-wrap a:hover{
+    border-bottom: 2px solid #6495de;
+}
+.main-wrap .left-wrap .logo{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;
+}
+.main-wrap p{
+    width: 400px;
+    background: #EBEEF2;
+    margin-top: 70px;
+    padding: 40px;
+    font-size: 18px;
+    line-height: 200%;
+}
+/* 選手登録画面 */
+.form label .require{
+    background: #FF8A8B;
+    margin-left: 5px;
+    color: #fff;
+    padding: 3px 5px;
+}
+.form select, textarea{
+    display: block;
+    height: 60px;
+    width: 100%;
+    background: #F6F5F5;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form .js-counter{
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.form .counter{
+    float: right;
+    display: inline;
+}
+.form .img-wrap{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.form .img-wrap .img-container{
+    width: 33.33%;
+    float: left;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.form .img-wrap .img-container .area-drop{
+    width: 100%;
+    height: 140px;
+    background: #f6f5f5;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    line-height: 140px;
+    position: relative;
+}
+.form .img-wrap .img-container .area-drop .input-file{
+    opacity: 0;
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/* 選手詳細画面 */
+.player-title{
+    font-size: 28px;
+    padding: 10px;
+}
+.category{
+    background: #85baeb;
+    color: #fff;
+    padding: 8px;
+    margin-right: 15px;
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+}
+.player-img-container{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.player-img-container .img-main{
+    float: left;
+    width: 750px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.player-img-container .img-main img{
+    max-height: 500px;
+}
+.player-img-container .img-sub{
+    float: left;
+    width: 230px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #ebeef3;
+}
+.player-img-container .img-sub img{
+    margin-bottom: 15px;
+    height: 140px;
+}
+.player-img-container .img-sub img:last-child{
+    margin-bottom: inherit;
+}
+.player-img-container img{
+    width: 100%;
+}
+.player-detail{
+    background: #ebeef3;
+    min-height: 300px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-size: 26px;
+}
+.player-item{
+    overflow: hidden;
+}
+.player-item .item-right{
+    width: 150px;
+    float: right;
+    overflow: hidden;
+}
+.player-item .item-left{
+    float: left;
+    margin-top: 20px;
+}
+.player-item .item-right i{
+    float: right;
+    margin-left: 20px;
+    padding: 8px;
+}
+.player-item .item-right i:hover{
+    cursor: pointer;
+    background: rgb(224, 223, 223);
+}
+/* マイページ */
+.list{
+    float: left;
+    overflow: hidden;
+    width: 780px;
+}
+.list .player-title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+.search-title{
+    overflow: hidden;
+    background: #EBEEF2;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.search-title .search-left{
+    float: left;
+}
+.search-title .search-right{
+    float: right;
+}
+.search-title .search-left .total-num{
+    font-weight: bold;
+}
+.panel-list{
+    overflow: hidden;
+    margin-right: -15px;
+}
+.list .panel{
+    display: block;
+    width: 25%;
+    min-height: 185px;
+    float: left;
+    text-decoration: none;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    color: #000;
+}
+.list .panel img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.list .panel .category{
+    font-size: 14px;
+    padding: 5px;
+}
+.panel-title p{
+    font-size: 18px;
+}
+.sidebar{
+    width: 180px;
+    height: 500px;
+    background: #ebeef3;
+    float: left;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-top: 75px;
+}
+
+.sidebar form{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sidebar form .title{
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+.sidebar form select{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    background: #f6f5f5;
+}
+.sidebar form input[type="submit"]{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 40px;
+    border: none;
+    background: #6495de;
+    color: #fff;
+    font-size: 16px;
+}
+.sidebar form input[type="submit"]:hover{
+    cursor: pointer;
+}
+.sidebar .link-wrap{
+    margin-top: 70px;
+}
+.sidebar .link-wrap a{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: #000;
+}
+.pagination{
+    overflow: hidden;
+}
+.pagination .pagination-list{
+    float: left;
+    position: relative;
+    left: 41%;
+    padding-left: 0;
+}
+.pagination .pagination-list .list-item{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    
+}
+.pagination .pagination-list .list-item.active a{
+    background: #000;
+    color: #fff;
+}
+.pagination .pagination-list .list-item a{
+    text-decoration: none;
+    color:#000;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #e6f0f0;
+    border-radius: 50%;
+    padding: 5px;
+}
+/* サクセスメッセージ */
+.msg-slide{
+    text-align: center;
+    color: #444;
+    background: rgba(247, 245, 155, 0.6);
+    font-size: 18px;
+    padding: 10px 0;
+}
+/* フッター */
+#footer{
+    height: 50px;
+    width: 100%;
+    background: rgb(10, 3, 100);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+}
+#footer a{
+    color: #fff;
+}
